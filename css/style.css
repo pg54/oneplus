@@ -1,0 +1,496 @@
+body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select,li
+{ padding: 0;margin: 0}
+li {list-style: none}
+img {border: none}
+a {text-decoration: none}
+body {font-family: "Helvetica Neue",Arial,"Microsoft Yahei",Helvetica,sans-serif,Lato;}
+#top {
+    width: 100vw;
+    height: 80px;
+    position: relative;
+}
+#top .top_wrap {
+    position: relative;
+    max-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+#top_logo {
+    width: 44px;
+    height: 44px;
+    margin: 17px 0 0 23px;
+    position: absolute;
+    display: inline-block;
+}
+.top_nav {
+    position: relative;
+    padding: 0 200px;
+}
+
+.top_menu {
+    display: inline-block;
+    -moz-transition: opacity .3s .6s,left .3s .3s;
+    -o-transition: opacity .3s .6s,left .3s .3s;
+    -webkit-transition: opacity .3s,left .3s;
+    -webkit-transition-delay: .6s,.3s;
+    transition: opacity .3s .6s,left .3s .3s;
+}
+.top_menu li {
+    display: inline-block;
+}
+.top_menu li a {
+    position: relative;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+    text-align: center;
+    color: #7e7e7e;
+    overflow: hidden;
+    padding: 0 30px;
+}
+.hoverStatus {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #EB2628;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all ,3s;
+}
+
+.top_menu li a:hover {
+    color: #000000;
+}
+.top_menu li a:hover .hoverStatus {
+    transform: translateY(-5px);
+}
+/*    searchbox  */
+.searchbox {
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    height: 80px;
+    visibility: hidden;
+    z-index: 2;
+    font-size: 16px;
+    box-sizing: border-box;
+    background: #6638F0;
+}
+.searchBar {
+    width: 100%;
+    height: 80px;
+}
+.searchBtn {
+    display: inline-block;
+    height: 80px;
+
+}
+.searchBar input {
+    height: 80px;
+}
+.suggestions {
+    position: absolute;
+    top: 80px;
+    color: #666;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 0 30px;
+    -moz-transition: max-height .3s;
+    -o-transition: max-height .3s;
+    -webkit-transition: max-height .3s;
+    transition: max-height .3s;
+}
+/*-----searchbox--------end-------------*/
+#top_bar_wrap {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 30px;
+}
+.top_bar {
+    display: inline-block;
+    text-align: right;
+    height: 50px;
+}
+.top_bar li {
+    display: inline-block;
+    padding: 0 10px;
+}
+.top_bar .top_bar_search {
+    height: 24px;
+    width: 24px;
+    background: url("http://statics.oneplus.cn/v2/img/common/icons-mb-1x-s9d9d8fdb39.png");
+    background-position-x: 0;
+    background-position-y: -22px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.search_close {
+    height: 16px;
+    width: 15px;
+    background: url("http://statics.oneplus.cn/v2/img/common/headerIcons/regular-sd82bde3545.png");
+    background-position-x: 0;
+    background-position-y: -24px;
+    background-repeat: no-repeat;
+}
+
+.top_bar .top_bar_shoppingCart {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    background: url("http://statics.oneplus.cn/v2/img/common/icons-mb-1x-s9d9d8fdb39.png") 0 -152px no-repeat;
+}
+.top_bar_shoppingCart .no_goods{
+    display: none;
+    background: #FFFFFF;
+    bottom: -76px;
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    padding: 0 40px;
+    margin-left: -86px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    z-index: 2;
+}
+.top_bar_shoppingCart .have_goods {
+    display: none;
+}
+.top_bar_shoppingCart:hover {
+    background: url("http://statics.oneplus.cn/v2/img/common/icons-mb-1x-s9d9d8fdb39.png") 0 -176px no-repeat;
+}
+.top_bar_shoppingCart:hover .no_goods {
+    display: block;
+}
+
+.top_bar .top_bar_user {
+    height: 24px;
+    width: 24px;
+    background: url("http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_person.png")  no-repeat;
+}
+.top_bar_user:hover {
+    background: url("http://statics.oneplus.cn/v2/img/common/icons/icon_person_hover.png")  no-repeat;
+}
+.top_bar .top_bar_menu {
+    height: 24px;
+    width: 24px;
+    background: url("http://statics.oneplus.cn/v2/img/common/icons-mb-1x-s9d9d8fdb39.png") 0 -70px no-repeat;
+    display: none;
+}
+
+/*   slider*/
+.swiper-container {
+    width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+}
+.swiper-container img {
+    width: 100%;
+}
+
+/*   slider----------------------end*/
+
+/*recommend*/
+.recommend {
+    padding: 0 2vw;
+    margin: 0;
+}
+.recommend_1,.recommend_2,.recommend_3 {
+    width: 28vw;
+    height: 300px;
+    display: inline-block;
+    margin: 1.5vw 0;
+    overflow: hidden;
+}
+.recommend_3 a {
+    display: block;
+}
+.recommend_3 img {
+    transform: translateX(-20%);
+}
+
+/*recommend-------------------------end*/
+
+/*activity*/
+.activity {
+    position: relative;
+    display: block;
+}
+.image1 {
+    display: block;
+}
+.activity_text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    text-align: center;
+}
+.activity h3 {
+    font-size: 48px;
+}
+.activity h4 {
+    font-size: 24px;
+}
+.activity #btn {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    background: transparent;
+    border: 1px #FFFFFF solid;
+    -webkit-transition: color .15s ease;
+    -webkit-transition-delay: 0s;
+}
+.activity #btn:hover {
+    cursor: pointer;
+    color: #000000;
+}
+.activity #btn:hover::before {
+    width: 131px;
+
+}
+.activity #btn::before {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 0;
+    height: 42px;
+    background: #fff;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    content: "";
+    -moz-transition: width .15s ease 0s;
+    -o-transition: width .15s ease 0s;
+    -webkit-transition: width .15s ease;
+    -webkit-transition-delay: 0s;
+    transition: width .15s ease 0s;
+    z-index: -1;
+}
+/*-----------------activity-end-----------------*/
+.networkInfo {
+    background: #F6F6F6;
+
+}
+.networkInfo ul {
+    margin-left: 2vw;
+}
+.networkInfo li {
+    background: #fff;
+    display: inline-block;
+    width: 28vw;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    margin: 0 1.5vw;
+}
+.networkInfo li:hover {
+    box-shadow: 0 17px 50px 0 rgba(0,0,0,.19);
+    transform: translate3d(0,-3px,0);
+    transition: all .3s cubic-bezier(.55,0,.1,1);
+}
+.networkInfo a {
+
+
+}
+.networkInfo a img {
+    display: block;
+    width: 100%;
+}
+.networkInfo_text {
+    background: #fff;
+    box-sizing: border-box;
+    min-height: 134px;
+    padding: 5.95855% 6.99482%;
+    color: #333;
+}
+.networkInfo_text h4 {
+    font-weight: 400;
+    line-height: 34px;
+    font-size: 18px;
+}
+.networkInfo_text p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#content_service {
+    position: relative;
+    width: 100%;
+    height: 181px;
+    padding: 0 20px;
+    border-bottom: 1px solid #F1F1F1;
+}
+#content_service .service_info {
+    width: 93.76%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 42px 0;
+}
+
+#content_service .service_info li {
+    float: left;
+    width: 25%;
+}
+#content_service a {
+    display: block;
+}
+
+#content_service a {
+    font-size: 14px;
+    color: #565b62;
+    text-align: center;
+}
+
+#content_service .service_1h {
+    width: 80px;
+    height: 80px;
+    background: url("http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_service.png") 0 -80px no-repeat;
+    margin: 0 auto;
+}
+#content_service .service_7dayReturn {
+    width: 80px;
+    height: 80px;
+    background: url("http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_service.png") 0 -240px no-repeat;
+    margin: 0 auto;
+
+}
+
+#content_service .service_15dayReturn {
+    width: 80px;
+    height: 80px;
+    background: url("http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_service.png") no-repeat ;
+    margin: 0 auto;
+
+}
+
+#content_service .service_30daySwap {
+    width: 80px;
+    height: 80px;
+    background: url("http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_service.png") 0 -160px no-repeat;
+    margin: 0 auto;
+}
+
+
+
+/*foooter*/
+#footer_bottom {
+    position: relative;
+    width: 100vw;
+    height: 80px;
+    background: #f2f2f2;
+    color: #333;
+}
+#footer_bottom .inner {
+    position: relative;
+    max-width: 1200px;
+    /*height: 80px;*/
+    border: 1px red solid;
+    margin: 0 auto;
+}
+.footer_options {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 200px;
+    border: 1px green solid;
+    display: none;
+}
+.footer_tags {
+    float: left;
+    margin: 0;
+    font-size: 12px;
+}
+/*.footer_tags {zoom:1;}    !*==for IE6/7 Maxthon2==*!*/
+/*.footer_tags :after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}*/
+.footer_tags span {
+    line-height: 80px;
+    vertical-align: middle;
+}
+.footer_locale {
+    display: inline-block;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+
+
+
+/*foooter-------------------------end*/
+
+@media (max-width: 550px) {
+    #content_service {
+
+
+
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .networkInfo ul {
+        width:83.3vw;
+        margin: 0 auto;
+    }
+    .networkInfo li {
+        background: #fff;
+        display: block;
+        width: 100%;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+
+    #content_service {
+        position: relative;
+        width: 100%;
+        height: 181px;
+        padding: 0 20px;
+        border-bottom: 1px solid #F1F1F1;
+    }
+    #content_service .service_info {
+        width: 93.76%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 42px 0;
+    }
+
+    #content_service .service_info li {
+        float: left;
+        width: 50%;
+        margin: 0;
+    }
+    #content_detailInfo {
+
+    }
+    .top_bar .top_bar_search {
+        display: none;
+    }
+    .top_bar .top_bar_menu {
+        display: inline-block;
+    }
+    .top_bar .top_bar_menu:hover {
+        background-position: 0 -94px;
+    }
+
+    .top_nav {
+        display: none;
+
+    }
+    /*底部*/
+
+
+
+}
+

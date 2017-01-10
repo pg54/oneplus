@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #div1 {
+            width: 600px;
+            height: 300px;
+            border: 2px blue solid;
+        }
+        #div2 {
+            width: 600px;
+            height: 300px;
+            border: 2px blue solid;
+        }
+        #div3 {
+            width: 600px;
+            height: 300px;
+            border: 2px blue solid;
+        }
+        #div4 {
+            width: 600px;
+            height: 300px;
+            border: 2px blue solid;
+        }
+        #div5 {
+            width: 600px;
+            height: 300px;
+            border: 2px blue solid;
+        }
+        #div6 {
+            width: 600px;
+            height: 300px;
+            border: 2px blue solid;
+        }
+    </style>
+    <script type="text/javascript">
+        window.scroll(function () {
+            console.log('haha');
+            var length = document.scrollTop;
+            var divFive = document.querySelector('#div5');
+            var eleLength = divFive.offset().top;
+            var height = window.height/2;
+            if (eleLength-length < height) {
+                divFive.css('width','1000px');
+            }
+
+        })
+    </script>
+</head>
+<body>
+<div id="div1">area1</div>
+<div id="div2">area2</div>
+<div id="div3">area3</div>
+<div id="div4">area4</div>
+<div id="div5">area5</div>
+<div id="div6">area6</div>
+
+</body>
+</html>

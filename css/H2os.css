@@ -1,0 +1,106 @@
+@charset "UTF-8";
+body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select,li
+{ padding: 0;margin: 0}
+li {list-style: none}
+img {border: none}
+a {text-decoration: none}
+
+#fixedNav {
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+.nav-wraper {
+    position: relative;
+    max-width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+}
+.nav-wraper .nav-a {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    padding: 26px 0;
+    color: #333;
+}
+.nav-wraper a:hover {
+    text-decoration: none;
+    color: #FF0000;
+
+}
+.nav-menu {
+    display: inline-block;
+}
+.nav-menu li {
+    display: inline-block;
+    padding: 0 15px;
+}
+.nav-menu li a {
+    display: inline-block;
+    height: 70px;
+    font-size: 14px;
+    padding: 28px 0;
+    color: #333;
+}
+
+.nav-wraper .buyWrap {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    height: 70px;
+    overflow: hidden;
+    padding: 15px 0;
+}
+.buyLink {
+    color: #FFFFFF;
+    font-size: 18px;
+    background-color: #FF2A1A;
+}
+.buyLink:hover {
+    background-color: #FF0000;
+}
+
+.col-md-3,.col-md-4,.col-md-6,.col-md-8 {
+    border: 1px #6638F0 solid;
+    background-color: #1d84ad;
+}
+.mobile-show {
+    display: none;
+}
+
+#section_b .col-sm-7 {background-color: #5ED3B8;}
+#section_b .col-sm-5 {background-color: #F2F2F2}
+
+#section_c .col-sm-5 {background-color: #F2F2F2;}
+#section_c .col-sm-7 {background-color: #393E41}
+
+#section_d .col-sm-7 {background-color: #C1C9CB;}
+#section_d .col-sm-5 {background-color: #F2F2F2}
+
+#section_e .col-sm-5 {background-color: #F2F2F2;}
+#section_e .col-sm-7 {background-color: #D7D8DA}
+
+#section_f .col-sm-7 {background-color: #405579;}
+#section_f .col-sm-5 {background-color: #F2F2F2}
+
+.intro-text {
+    width: 100%;
+    max-width: 460px;
+    display: inline-block;
+    padding-top: 115px;
+    padding-left: 100px
+}
+img {
+    -webkit-transition: all .6s ease-in-out .3s ;
+    -webkit-animation: gogogo 2s infinite linear;
+}
+img.dyma  {
+    transform: translateY(-5%);
+
+}
+.pg-right {
+    float: right;
+}

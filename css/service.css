@@ -1,0 +1,21 @@
+#header {
+  width: 100vw; }
+  #header .header-inner {
+    width: 100%;
+    height: 80px; }
+    #header .header-inner .logo {
+      float: left;
+      width: 50px;
+      height: 50px;
+      background-color: green; }
+    #header .header-inner .nav-menu {
+      height: 80px;
+      margin: 0 200px;
+      background-color: yellow; }
+    #header .header-inner .nav-bar {
+      height: 50px;
+      width: 200px;
+      float: right;
+      background-color: red; }
+
+/*# sourceMappingURL=service.css.map */

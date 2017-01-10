@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一加手机</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/customer.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/home.js"></script>
+    <style type="text/css">
+        #sidebar {
+            position: fixed;
+            top: 80px;
+            right: -160px;
+            width: 180px;
+            z-index: 200;
+            background-color: #29A7E2;
+            -webkit-transition: right 0.5s ease;
+            -moz-transition: right 0.5s ease;
+            -ms-transition: right 0.5s ease;
+            -o-transition: right 0.5s ease;
+            transition: right 0.5s ease;
+            border-radius: 10px;
+        }
+        #sidebar .toggleBtn {
+            float: left;
+            width: 20px;
+            height: 100%;
+            font-size: 18px;
+            padding: 40px 0;
+        }
+        #sidebar .customer-item {
+            display: block;
+            margin: 20px 0 20px 30px;
+            background-color: #F7F7F7;
+            border-radius: 10px;
+        }
+        .customer-item li {
+            border: 1px #E6E4E4 solid;
+            text-align: center;
+        }
+        .customer-item li a {
+            font-size: 14px;
+            color: #7E7E7E;
+        }
+        .customer-item li a:hover {
+            text-decoration: underline;
+        }
+        .toggleBtn span {
+            font-size: 30px;
+            color: #F6FAF5;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div class="top_wrap">
+        <div id="top_logo">
+            <a href="#"><img src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_logo.png"></a>
+        </div>
+        <div class="top_nav">
+            <ul class="top_menu">
+                <li><a href="#">一加手机3<div class="hoverStatus"></div></a></li>
+                <li><a href="#">一加手机2<div class="hoverStatus"></div></a></li>
+                <li><a href="#">商城<div class="hoverStatus"></div></a></li>
+                <li><a href="#">服务<div class="hoverStatus"></div></a></li>
+                <li><a href="#">博客<div class="hoverStatus"></div></a></li>
+                <li><a href="#">论坛<div class="hoverStatus"></div></a></li>
+            </ul>
+            <form class="searchbox" action="">
+                <div class="searchBar">
+                    <button class="searchBtn"></button>
+                    <input type="search" placeholder="搜索您的商品名称" />
+                </div>
+                <section>
+                <ul class="suggestions">
+                    <li><a href="#">一加手机2</a></li>
+                    <li><a href="#">一加来电</a></li>
+                    <li><a href="#">一加金耳</a></li>
+                    <li><a href="#">一加银耳</a></li>
+                </ul>
+                </section>
+            </form>
+        </div>
+        <div id="top_bar_wrap">
+            <ul class="top_bar">
+                <li class="top_bar_search">
+                    <!--<div class="searchDiv"></div>-->
+                </li>
+                <li class="top_bar_shoppingCart">
+                    <a href="#"></a>
+                    <div class="have_goods">
+                    </div>
+                    <div class="no_goods">
+                        您的购物车里没有商品
+                    </div>
+                </li>
+                <li class="top_bar_user"><a href="#"><span></span></a></li>
+                <li class="top_bar_menu"></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div id="sidebar">
+        <div class="toggleBtn">在线客服<span>⇛</span></div>
+        <ul class="customer-item">
+            <li>赣冠五洲在线客服</li>
+            <li><a href="" target="_blank">学校总部</a></li>
+            <li><a href="" target="_blank">盐田校区</a></li>
+            <li><a href="" target="_blank">罗湖校区</a></li>
+            <li><a href="" target="_blank">福田校区</a></li>
+            <li><a href="" target="_blank">南山校区</a></li>
+            <li><a href="" target="_blank">宝安校区</a></li>
+            <li><a href="" target="_blank">坂田校区</a></li>
+            <li><a href="" target="_blank">坪山校区</a></li>
+            <li><a href="" target="_blank">在线留言</a></li>
+            <li><a href="" target="_blank">关于我们</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="content_productInfo">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href=""><img  src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_slider1.jpg"></a></div>
+                    <div class="swiper-slide"><a href=""><img src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_slider2.jpeg"></a></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    autoplay: 2000,
+                    paginationClickable: true,
+                });
+            </script>
+            <div class="recommend">
+                <div class="recommend_1">
+                    <a href=""><img src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_recommend1.jpeg"></a>
+                </div>
+                <div class="recommend_2">
+                    <a href=""><img src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_recommend2.jpeg"></a>
+                </div>
+                <div class="recommend_3">
+                    <a href=""><img src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_recommend3.jpeg"></a>
+                </div>
+            </div>
+            <div class="activity">
+                <img class="image" src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_activity_small.jpg"
+                     srcset="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_activity_small.jpg 640w,http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_activity_large.jpg 1920w"
+                     sizes="(max-width:1024px) 100vw,100vw" alt="挑战一加签约摄影师">
+                <div class="activity_text">
+                    <h3>挑战一加签约摄影师</h3>
+                    <h4>一日光阴 一图风景</h4>
+                    <button id="btn">我要参加</button>
+                </div>
+            </div>
+            <div class="networkInfo">
+                <!-- 鼠标悬停效果 -->
+                <ul>
+                    <li><a href="">
+                        <img src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_networkInfo1.jpeg" alt="">
+                        <div class="networkInfo_text">
+                            <h4>博客</h4>
+                            <p>对谈 OnePlus 3 产品经理：我不想老了后悔</p>
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <img src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_networkInfo2.jpeg" alt="">
+                        <div class="networkInfo_text">
+                            <h4>视频</h4>
+                            <p>一加手机3产品视频</p>
+                        </div>
+                    </a></li>
+                    <li><a href="">
+                        <img src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_networkInfo3.jpeg" alt="">
+                        <div class="networkInfo_text">
+                            <h4>新闻</h4>
+                            <p>史上最全的一加手机 3 媒体报道权威汇总</p>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content_service">
+            <ul class="service_info">
+                <li>
+                    <a href="">
+                        <div class="service_1h"></div>
+                        <span>1小时售后派单响应</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="service_7dayReturn"></div>
+                        <span>7天无理由退货</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="service_15dayReturn"></div>
+                        <span>15天退货保障</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="service_30daySwap"></div>
+                        <span>30天换货保障</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer_anchors" style="column-width:20em; columns:4;">
+            <div class="product hide">
+                <p class="tittle">一加产品</p>
+                <ul>
+                    <li>一加手机3</li>
+                    <li>一加手机X</li>
+                    <li>一加手机2</li>
+                    <li>一加手机1</li>
+                </ul>
+            </div>
+            <div class="companyInfo hide">
+                <p class="tittle">关于一加</p>
+                <ul>
+                    <li>了解一加</li>
+                    <li>加入一加</li>
+                    <li>H2OS</li>
+                    <li>零售店</li>
+                </ul>
+            </div>
+            <div class="serviceSup hide">
+                <p class="tittle">服务支持</p>
+                <ul>
+                    <li>自助服务</li>
+                    <li>技术支持</li>
+                    <li>售后服务</li>
+                    <li>一加加多保</li>
+                </ul>
+            </div>
+            <div class="customerService">
+                <h1 class="service_tel">400-888-1111</h1>
+                <div class="service_onlineServicer">在线客服</div>
+            </div>
+        </div>
+        <div id="footer_bottom">
+            <div class="inner">
+                <div class="footer_tags">
+                    <span class="copyright">© 2013-2016 深圳市万普拉斯贸易有限公司 版权所有(粤ICP备13088308号-1)</span>
+                    <span class="premissonImg1"><a href=""><img src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_cnnic.png" style="width: 83px;height: 30px"></a></span>
+                    <span class="premissonImg2"><a href=""><img src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_safe.png" style="width: 83px;height: 30px"></a></span>
+                </div>
+                <div class="footer_locale">
+                    Change location
+                    <a class="footer_locale_flag" href=""><img src="http://7xo5hi.com1.z0.glb.clouddn.com/0704onePlus_location.png" style="width: 30px;height: 20px"></a>
+                </div>
+                <div class="footer_options">
+                    <a href="http://www.oneplus.cn" class="chinese_left">中文</a>
+                    <a href="http://www.oneplus.net" class="chinese_left">Global</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
